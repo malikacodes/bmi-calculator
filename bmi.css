@@ -1,0 +1,45 @@
+.calccontainer {
+  display:grid; 
+  place-items: center;
+  margin-top: 100px;
+}
+
+.calccontainer input[type="text"] {
+  width: 50px;
+}
+
+.calcbox { /*entire BMI Calculator*/ 
+  width: 350px; 
+  height: auto; 
+  border-width: 5px;
+  border-color: #52e0ae;
+  background-color: #52e0ae;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}  
+
+.calcbox:hover { /*shadow of the container*/ 
+  box-shadow: 0 14px 28px
+  rgba(0, 0, 0, .25), 0 10px 10px 
+  rgba(0,0,0,0.22);
+}
+
+#computeButton { /*button*/ 
+  display: block;
+  margin: auto;
+}
+
+.heightInput, .weightInput, .bmiOutput { /*inputs*/ 
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-left: 70px;
+}
+
+input:focus {
+  outline: none; /*mouse when clicked*/ 
+}
